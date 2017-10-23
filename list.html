@@ -1,9 +1,10 @@
-<div ng-controller="exampleController">
+<div ng-controller="listController">
+	<h4>{{message}}</h4>
     <div ng-repeat="item in list">
         <h4>User {{$index+1}}:</h4>
         <p>Fist name: {{item.firstName}}</p>
         <p>Last name: {{item.lastName}}</p>
-        <p>Change last name: <input type="text" data-ng-model="item.lastName"></p>
+        <p>Change last name: <input type="text" ng-model="item.lastName"></p>
     </div>
     <a href="#!/">Go back</a>
 </div>
